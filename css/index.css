@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+body {
+  background-color: #333;
+}
+
+.contenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.contenu .bouton {
+  display: inline;
+  position: relative;
+  background-color: #5a4f8d;
+  border: 0.2vh solid #fdf4a1;
+  border-radius: 0.4vh;
+  color: #fdf4a1;
+  padding: 1.5vh;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2vh;
+  margin-bottom: 2vh;
+  margin-right: 2vw;
+  margin-top: 2vh;
+}
+
+.contenu .titres {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff88f;
+  width: 75vw;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contenu .titres {
+    font-size: 3vh;
+  }
+}
+
+.contenu .poster {
+  width: 47vw;
+  height: 69vw;
+  margin-bottom: 3vh;
+  margin-top: 7vh;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
+@media (min-width: 768px) {
+  .contenu .poster {
+    height: 35vh;
+    width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenu .poster {
+    height: 45vh;
+    width: auto;
+    margin-top: 5vh;
+  }
+}
+
+.contenu .acteurs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30vh;
+}
+
+.contenu .acteurs .acteur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 23vw;
+  width: 23vw;
+  max-width: 300px;
+  max-height: 300px;
+  margin-right: 2vw;
+  margin-bottom: 2vh;
+  padding: 1vh;
+  background-color: #f7e78c;
+  border: 0.5vh solid #726538;
+  border-radius: 1vh;
+  color: black;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 5vw;
+  font-weight: 500;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  -webkit-animation: rotate 0.5s ease-in-out;
+          animation: rotate 0.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .contenu .acteurs .acteur {
+    height: 15vw;
+    width: 15vw;
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenu .acteurs .acteur {
+    height: 11vw;
+    width: 11vw;
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenu .acteurs {
+    width: 75vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenu .acteurs {
+    width: 90vw;
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateY(90deg);
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateY(90deg);
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+  }
+}
+/*# sourceMappingURL=index.css.map */
