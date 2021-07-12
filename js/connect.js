@@ -1,5 +1,3 @@
-const API_KEY = "1bbcfab03c5b306d931315c1657faec4";
-
 const nouveau_film = document.getElementById('nouveau_film');
 const acteur_suivant = document.getElementById('acteur_suivant');
 const reponse = document.getElementById('bouton_reponse');
