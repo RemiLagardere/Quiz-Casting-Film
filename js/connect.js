@@ -31,14 +31,14 @@ nouveau_film.onclick = function(event){
     }
     const page = Math.floor(Math.random() * 55) + 1;
     const rand_movie = Math.floor(Math.random() * 21);
-    const url = "https://api.themoviedb.org/3/discover/movie?api_key=" + API_KEY + "&language=fr-FR&sort_by=vote_average.desc&langage=fr_FR&vote_count.gte=3000&include_adult=false&with_original_language=fr&with_original_language=en&page=" + page;
+    const url = "https://api.themoviedb.org/3/discover/movie?api_key=" + ${{ secrets.SECRET_TOKEN }} + "&language=fr-FR&sort_by=vote_average.desc&langage=fr_FR&vote_count.gte=3000&include_adult=false&with_original_language=fr&with_original_language=en&page=" + page;
 
     fetch(url)
         .then((res) => res.json())
         .then((data) => {
                 console.log(data);
                 console.log('Data: ', data.results[rand_movie].original_title);
-                var cast_url = "https://api.themoviedb.org/3/movie/" + data.results[rand_movie].id + "/credits?api_key=" + API_KEY + "&language=en-US";
+                var cast_url = "https://api.themoviedb.org/3/movie/" + data.results[rand_movie].id + "/credits?api_key=" + ${{ secrets.SECRET_TOKEN }} + "&language=en-US";
                 var affiche_path = poster_path + data.results[rand_movie].poster_path;
                 var title = data.results[rand_movie].title;
                 titre.innerHTML = title;
